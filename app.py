@@ -13,6 +13,10 @@ def home():
 def grazer():
     return render_template('grazer.html')  # render grazer game
 
+@app.route('/minesweeper')
+def minesweeper():
+    return render_template('minesweeper.html')  # render minesweeper game
+
 # start the server with the 'run()' method
 if __name__ == '__main__':
     app.run(debug=True)

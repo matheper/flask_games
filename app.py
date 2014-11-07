@@ -9,6 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')  # render index template
 
+@app.route('/grazer')
+def grazer():
+    return render_template('grazer.html')  # render grazer game
+
 # start the server with the 'run()' method
 if __name__ == '__main__':
     app.run(debug=True)
